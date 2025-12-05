@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            background-color: lightgreen;
+        }
+        input:disabled{
+            background-color: lightcoral;
+        }
+        input:checked{
+            border: 2px solid green;
+            accent-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <label>Enabled Input:</label>
+    <input type="text" />
+    <br><br>
+    <label>Disabled Input:</label>
+    <input type="text" disabled  value="123P3214N"/>
+    <br><br>
+    <label for="food">Food:</label>
+
+    <label for="pizza"> 
+        <input type="checkbox" name="" id="pizza" for=""> Pizza 
+    </label>
+    
+    <label for="burger">
+        <input type="checkbox" name="" id="burger" for=""> Burger 
+    </label>
+    
+    <label for="coke">
+        <input type="checkbox" name="" id="coke" checked > Coke
+    </label>
+    <br><br>
+
+    <input type="checkbox" name="" id="" checked>
+    <label for="">Terms and conditions</label> <br><br>
+    <button>Submit </button>
+
+</body>
+</html>
