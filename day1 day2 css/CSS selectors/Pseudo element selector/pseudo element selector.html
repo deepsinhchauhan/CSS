@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            color: rgb(207, 180, 129);
+        } */
+        p::first-letter{
+            font-size: 200%;
+            color: blue;
+        }
+        #para::first-line{
+            color: green;
+        }
+        #para::after{
+            content: "END";
+            color: red;
+        }
+        #para::before{
+            content: "START ";
+            color: orange;
+        }
+        li{
+            color: rgb(127, 192, 224);
+        }
+        #para3::selection{
+            color: purple;
+            background-color: rgb(10, 10, 10);
+        }
+        #para3 {
+            color:rgb(53, 143, 222);
+           
+        }
+        input::placeholder{
+            color: gray;
+            font-weight: bold;
+        }
+        input{
+            caret-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo element selector</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam repellat a ipsum et aperiam adipisci neque aut nobis rerum, repudiandae tenetur blanditiis voluptate ipsa nostrum, beatae, obcaecati molestiae necessitatibus.
+    Hic, eveniet illo perferendis saepe sed neque nam dolores est eligendi esse similique, alias nobis numquam minus. Accusamus aperiam culpa aliquam perferendis ipsa expedita provident error repellendus, id dolorum sapiente.
+    Eveniet atque ratione dignissimos natus, alias neque iste iusto eligendi at nam qui corporis culpa nihil non consequuntur commodi doloremque. Ratione corporis nisi eos nobis dicta similique adipisci perspiciatis ullam.
+    Doloribus fugiat enim optio quis minus molestias dignissimos, cumque ex quibusdam delectus ea recusandae voluptatum nesciunt eos ullam hic totam inventore omnis ut aliquid laborum nisi modi quas animi. Reiciendis.
+    Esse nulla aut consequatur similique atque exercitationem fuga obcaecati tempora perspiciatis earum saepe, eaque laboriosam, corporis incidunt error possimus doloribus iste, quas animi in minus quaerat totam repellat aperiam? Aspernatur!</p>
+
+    <hr>
+    <ul>
+        <li>List-1</li>
+        <li>List-2</li>
+        <li>List-3</li>
+    </ul>
+
+    <p id="para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti molestias adipisci cumque architecto autem doloribus provident dignissimos dolore, ratione dolorum quidem illum dolor deleniti rerum velit iure odit vel laborum.
+    Qui nisi dolores et voluptatem sed? Ut, cupiditate nam voluptatum harum aut recusandae tenetur inventore. Dignissimos placeat odio fuga natus excepturi sapiente, beatae assumenda autem saepe reprehenderit officia soluta totam?
+    Consequatur illum harum animi illo dolorum magnam natus! Voluptas explicabo doloremque culpa esse dolorum quod? Maiores natus perspiciatis quisquam, nulla reprehenderit illum dolor quam recusandae quaerat labore, eaque, iusto amet.</p>
+    <input type="text" placeholder="Enter your name"/>
+</body>
+</html>
