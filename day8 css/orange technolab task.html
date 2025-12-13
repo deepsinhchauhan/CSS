@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* border: 1px solid #fff; */
+        }
+        header{
+            background-color: black;
+            height: 72px;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+        section{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        aside{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid gold; */
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+        }
+        nav{
+            height: 100%;
+            width: 65%;
+            /* border: 2px solid red; */
+        }
+        ul{
+            height: 100%;
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: brown;   
+        }
+        img{
+            width: 250px;
+            height: 30px;
+        }
+        .sec{
+            display: flex;
+            height: 600px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 70%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #left{
+            width: 55%;
+            height: 100%;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        #right{
+            width: 45%;
+            height: 100%;
+            background-image: url(https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346624.jpg);
+        }
+        h1{
+            margin-top: 100px;
+            margin-left: 52px;
+            margin-right: 50px;
+            font-size: 40px;
+        
+        }
+        hr{
+            margin-top: 20px;
+            width: 40%;
+            margin-left: 52px;
+            border: 2px solid black;
+            
+        }
+        h2{
+            margin-top: 20px;
+           margin-left: 52px;
+            margin-right: 50px;
+            font-size: 32px;
+            color: rgba(0, 0, 0, 0.7)
+        }
+        button{
+            margin-top: 50px;
+            margin-left: 52px;
+            height: 50px;
+            width: 250px;
+            background-color: skyblue;
+            border-radius: 20px;
+            border: none;
+        }
+        button:hover{
+            background-color: brown;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            position: relative;
+                        
+        }
+        #wp{
+            height: 10px;
+            width: 10px;
+            left: 20px;
+            
+        }
+        #insta{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            color: white;
+            right: 55px;
+            
+        }
+        #copy{
+            color: white;
+        }
+        .fa-brands{
+            font-size: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.9);">
+    <header>
+        <section>
+        <aside>
+            <img src="https://orangetechnolab.net/wp-content/uploads/2022/05/logo-orange.png" alt=""/>
+        </aside>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Emerging technologies</a></li>
+                <li><a href="">Industries</a></li>
+                <li><a href="">Paretner</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="">Career </a></li>
+                <li><a href="">Contact </a></li>
+                <li><a href="">Blog </a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+
+    <section class="sec">
+        <div class="container">
+            <div id="left">
+                <h1>Your Idea, Our Expertise -On Demand Mobile App Development</h1>
+                <hr>
+                <h2>Custom Apps for every need - Fast, Reliable & Scalable</h2>
+                <button><b>Get your app build Today!</b></button>
+            </div>
+            <div id="right">
+                <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346624.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="wp"> 
+            <a href="" ><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div id="copy">
+            <p> &copy; sdkjfhkjsd </p>
+        </div>
+        <div id="insta"> 
+           <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    
+</body>
+</html>
