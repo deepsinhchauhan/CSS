@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .grid-parent{
+            width: 100%;
+            height: 100vh;
+            border: 2px solid red;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, auto);
+            /* justify-content: stretch; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-item{
+            padding: 20px;
+            border: 2px solid greenyellow;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid in html</h1>
+    <div class="grid-parent">
+        <div class="grid-item">grid-item-1</div>
+        <div class="grid-item">grid-item-2</div>
+        <div class="grid-item">grid-item-3</div>
+        <div class="grid-item">grid-item-4</div>
+        <div class="grid-item">grid-item-5</div>
+        <div class="grid-item">grid-item-6</div>
+        <div class="grid-item">grid-item-7</div>
+        <div class="grid-item">grid-item-8</div>
+        <div class="grid-item">grid-item-9</div>
+        <div class="grid-item">grid-item-10</div>
+        <div class="grid-item">grid-item-11</div>
+        <div class="grid-item">grid-item-12</div>
+        <div class="grid-item">grid-item-13</div>
+        <div class="grid-item">grid-item-14</div>
+        <div class="grid-item">grid-item-15</div>
+        <div class="grid-item">grid-item-16</div>
+        <div class="grid-item">grid-item-17</div>
+        <div class="grid-item">grid-item-18</div>
+        <div class="grid-item">grid-item-19</div>
+        <div class="grid-item">grid-item-20</div>
+    </div>
+</body>
+</html>
