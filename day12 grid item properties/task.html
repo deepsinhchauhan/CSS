@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .parent{
+            width: 100%;
+            height: 100vh;
+            background-color:black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item{
+            border: 2px solid black;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #grid-item1{
+            background-image: url(https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 1;
+            grid-row:1/3;
+        }
+        #grid-item2{
+            background-image: url(https://images.pexels.com/photos/33401262/pexels-photo-33401262.jpeg?cs=srgb&dl=pexels-gilles-33401262.jpg&fm=jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 2/4;
+        }
+        #grid-item3{
+            background-image: url(https://images.pexels.com/photos/4994267/pexels-photo-4994267.jpeg?cs=srgb&dl=pexels-deuspix-4994267.jpg&fm=jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 4;
+            grid-row: 1/3;
+        }
+        #grid-item4{
+            grid-column: 2/4;
+        }
+        #grid-item5{
+            background-image: url(https://images.pexels.com/photos/5151977/pexels-photo-5151977.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 1;
+            grid-column: 1/3;
+        }
+        #grid-item6{
+            display: flex;
+            
+            flex-direction: column;
+            align-items: start;
+            grid-column: 3;
+            grid-column: 3/5;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="grid-item" id="grid-item1">
+
+        </div>
+        <div class="grid-item" id="grid-item2">2
+
+        </div>
+        <div class="grid-item" id="grid-item3">3
+
+        </div>
+        <div class="grid-item" id="grid-item4">
+            <h1 style="font-size: 200px; color: #fff;">Result</h1>
+        </div>
+        <div class="grid-item" id="grid-item5">5
+
+        </div>
+        <div class="grid-item" id="grid-item6">
+            <h1 style="font-size: 80px; color: #fff;"><span style="color: blue;">#</span>Task4</h1>
+            <p style="font-size: 50px; color: #fff;" >Responsive image Galery Using CSS Grid</p>
+        </div>
+    </div>
+</body>
+</html>

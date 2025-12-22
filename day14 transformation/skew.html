@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        #box1:hover{
+            transform: skew(50deg);
+            background-color: aqua;
+        }
+        #box2:hover{
+            transform: skewY(50deg);
+            background-color: aqua;
+        }
+        #box3:hover{
+            transform: skew(40deg,40deg);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS transformation</h1>
+    <p>by default skew is Xaxis and 1(100%)</p>
+    <div class="parent">
+    <div class="box" id="box1">Skew X</div>
+    <div class="box" id="box2">Skew y</div>
+    <div class="box" id="box3">Skew X-Y</div>
+    </div>
+</body>
+</html>
