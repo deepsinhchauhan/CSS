@@ -9,8 +9,7 @@
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
         }
         h1{
             text-align: center;
@@ -35,12 +34,12 @@
             background-position: center;
             background-size: 120%;
             position: absolute;
-            animation: moon-orbit 5s linear infinite;
+            animation: rotate 5s linear infinite;
         }
         .moon-orbit{
-            height: 600px;
-            width: 600px;
-            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            /* border: 1px solid black; */
             border-radius: 50%;
             animation: name duration timing-function delay iteration-count direction fill-mode;
             animation: moon-orbit 5s linear infinite;
@@ -59,7 +58,7 @@
         }
         @keyframes rotate {
             from{
-                transform: translate();
+                /* transform: translate(); */
                 transform: rotate(360deg);
             }
             to{
