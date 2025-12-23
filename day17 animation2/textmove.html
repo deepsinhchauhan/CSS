@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            height: 100px;
+            background-color: tomato;
+            overflow: hidden;    
+            display: flex;
+            align-items: center;
+        }
+        p{
+            font-size: 50px;
+            padding: 100%;
+            color: black;
+            white-space: nowrap;
+            animation: movingText 2s linear infinite;
+        }
+        @keyframes movingText {
+            from{
+                transform: translate(100%);
+            }
+            to{
+                transform: translate(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Moving text </h1>
+    <div class="container">
+        <p>🚀 This is a moving text from right to left 🚀</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .spinner-container{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .spinner{
+            width: 200px;
+            height: 200px;
+            border: 5px solid white;
+            border-bottom: 5px solid orange;
+            border-radius: 50%;
+            animation: identifier 1s linear infinite;
+        }
+        p{
+            color: white;
+        }
+        .spinner1{
+            width: 200px;
+            height: 200px;
+            border: 5px solid white;
+            
+            border-radius: 50%;
+            animation: identifier1 1s linear infinite;
+        }
+        @keyframes identifier {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes identifier1 {
+            0%{
+                border-bottom: 5px solid orange;
+                border-left: 5px solid white;
+                border-top: 5px solid white;
+                border-right: 5px solid white;
+            }
+            25%{
+                border-bottom: 5px solid white;
+                border-left: 5px solid red;
+                border-top: 5px solid white;
+                border-right: 5px solid white;
+            }
+            50%{
+                border-bottom: 5px solid white;
+                border-left: 5px solid white;
+                border-top: 5px solid blue;
+                border-right: 5px solid white;
+            }
+            75%{
+                border-bottom: 5px solid white;
+                border-left: 5px solid white;
+                border-top: 5px solid white;
+                border-right: 5px solid green;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+        <div class="spinner1"></div>
+    </div>
+</body>
+</html>
