@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:cursive;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            margin: 30px;
+        }
+        h2{
+            text-align: center;
+            transition: all 0.2s linear;
+            opacity: 0;
+        }
+        .parent{
+            width: 90%;
+            height: 70vh;
+            margin: auto;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .child{
+            width: 10%;
+            height: 90%;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center ;
+            transition: all 0.5s linear;
+        }
+        .child:hover{
+            flex-grow: 1;
+            h2{
+                opacity: 1;
+            }
+        }
+        .child:nth-child(1){
+            background-image: url(https://media.istockphoto.com/id/155096944/photo/taj-mahal-sunrise.jpg?s=612x612&w=0&k=20&c=SR-5FqC8K5cMJwUbLa-UQGAvZdJ48rLrdg63bBYpsDU=);    
+        }
+        .child:nth-child(2){
+            background-image: url(https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg);    
+        }
+        .child:nth-child(3){
+            background-image: url(https://www.worldhistory.org/uploads/images/3048.jpg);    
+        }
+        .child:nth-child(4){
+            background-image: url(https://images.nationalgeographic.org/image/upload/v1638892506/EducationHub/photos/the-great-wall-of-china.jpg);    
+        }
+        .child:nth-child(5){
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg);    
+        }
+        .child:nth-child(6){
+            background-image: url(https://cdn.britannica.com/24/153524-050-BA9D084B/Al-Dayr-Petra-Jordan.jpg);    
+        }
+        .child:nth-child(7){
+            background-image: url(https://publisher-ncreg.s3.us-east-2.amazonaws.com/pb-ncregister/swp/hv9hms/media/20231122221124_45448c583eabca7ad6be347939c641312d4ce7570209ad29d3345175aea14fec.jpg);    
+        }
+    </style>
+</head>
+<body>
+    <h1>7 Wonders of World.</h1>
+    <div class="parent">
+        <div class="child">
+            <h2>Taj Mahal</h2>
+        </div>
+        <div class="child">
+            <h2>Colosseum</h2>
+        </div>
+        <div class="child">
+            <h2>Chichen Itza</h2>
+        </div>
+        <div class="child">
+            <h2>The Great Wall of China</h2>
+        </div>
+        <div class="child">
+            <h2>Machu Picchu</h2>
+        </div>
+        <div class="child">
+            <h2>Petra</h2>
+        </div>
+        <div class="child">
+            <h2>Christ the Redeemer</h2>
+        </div>
+    </div>
+</body>
+</html>
